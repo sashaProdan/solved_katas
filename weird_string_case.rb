@@ -17,3 +17,4 @@ def weirdcase(str)
     word.chars.map.with_index { |char,i| i.even? ? char.upcase : char.downcase}.join
   end.join(' ')
 end
+

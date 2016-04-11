@@ -1,3 +1,4 @@
+
 # Deoxyribonucleic acid (DNA) is a chemicalfound in the nucleus of cells
 # and carrues the "instructions" for the development and functioning of living 
 # organisms.
@@ -13,5 +14,3 @@ def DNA_strand(dna)
   hash = Hash[arr.zip(arr.reverse)]
   dna.chars.map{ |char| char = hash.fetch(char) if hash.include? char }.join
 end
-
-p DNA_strand('AAAA')

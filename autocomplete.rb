@@ -1,3 +1,4 @@
+
 # The autocomplete function will take in an input string and a dictionary array 
 # and return the values from the dictionary that start with the input string. 
 # If there are more than 5 matches, restrict your output to the first 5 results.
@@ -38,8 +39,3 @@ def autocomplete(input, dictionary)
   str = input.scan(/[a-z]/).join.downcase
   str.empty? ? dictionary[0..4] : dictionary.select{ |word| word.downcase.start_with? str }.first(5)
 end
-
-
-
-
-p autocomplete('%^%&*&^', dictionary)
