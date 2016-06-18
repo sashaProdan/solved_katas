@@ -13,7 +13,7 @@
 
 
 def prefill(n = 0, v = 'undefined')
-    if (n.is_a?(String) && n == n.to_i.to_s) || n.is_a?(Integer)
+    if (n.is_a?(String) && n == n.to_i.to_s) || n.is_a?(Integer) && n >= 0 
        Array.new(n.to_i, v)
     else
       raise TypeError, "#{n} is invalid" 
